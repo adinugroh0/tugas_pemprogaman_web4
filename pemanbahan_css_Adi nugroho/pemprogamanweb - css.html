@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas penambahan css</title>
+  </head>
+  <!--
+      Nama  : Adi Nugroho
+      Nim   : C2C022027
+      Kelas : Informatika A
+    -->
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url(cover.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    ">
+    <section
+      style="
+        position: relative;
+        max-width: 400px;
+        background-color: transparent;
+        border: 2px solid rgba (255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(55px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+      ">
+      <form>
+        <h1 style="font-size: 2rem; text-align: center; color: #fff">
+          BIODATA MAHASISWA
+        </h1>
+        <div style="display: flex; gap: 10px">
+          <div>
+            <label
+              style="
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                  Consolas, Liberation Mono, Courier New, monospace;
+              "
+              for="nama"
+              >Nama Lengkap:</label
+            ><br />
+            <input
+              style="
+                width: 90%;
+                height: 30px;
+                background: transparent;
+                border: #fff solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+              "
+              type="text"
+              id="nama"
+              name="nama"
+              required /><br /><br />
+          </div>
+          <div>
+            <label
+              style="
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                  Consolas, Liberation Mono, Courier New, monospace;
+              "
+              for="nim"
+              >NIM:</label
+            ><br />
+            <input
+              style="
+                width: 100%;
+                height: 30px;
+                background: transparent;
+                border: #fff solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+              "
+              type="text"
+              id="nim"
+              name="nim"
+              pattern="\d*"
+              minlength="8"
+              maxlength="10"
+              required />
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <label for="kelasa"
+            ><input style="width: 20px; height: 20px" type="checkbox" />Kelas
+            A</label
+          >
+          <label for="kelasb"
+            ><input style="width: 20px; height: 20px" type="checkbox" />Kelas
+            B</label
+          >
+          <label for="kelasc"
+            ><input style="width: 20px; height: 20px" type="checkbox" />Kelas
+            C</label
+          >
+          <br /><br />
+        </div>
+        <div style="display: flex; justify-content: flex-start; gap: 10px">
+          <div>
+            <label for="tahun_masuk">Tahun Masuk:</label><br />
+            <input
+              style="
+                width: 100%;
+                height: 45px;
+                background: transparent;
+                border: #fafafa solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+              "
+              type="number"
+              id="tahun_masuk"
+              name="tahun_masuk"
+              min="1990"
+              max="2024"
+              required />
+          </div>
+          <br />
+          <div>
+            <label for="prodi">Program Studi:</label><br />
+            <select
+              style="
+                width: 100%;
+                height: 50px;
+                background: transparent;
+                border: #fff solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+              "
+              id="prodi"
+              name="prodi">
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Sistem Mesin">Teknik Mesin</option>
+              <option value="Teknik Elektro">Teknik Elektro</option>
+              <option value="Teknik Elektro">Arsitektur</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div style="justify-content: flex-start; display: flex">
+          <label for="laki-laki"
+            ><input
+              type="radio"
+              id="laki-laki"
+              value="Laki-laki"
+              required />Laki-laki</label
+          >
+          <label for="perempuan"
+            ><input
+              type="radio"
+              id="perempuan"
+              value="perempuan"
+              required />Perempuan</label
+          >
+        </div>
+        <br /><br />
+        <input
+          style="
+            width: 100%;
+            height: 40px;
+            background-color: rgb(255, 255, 255, 0.5);
+            border-radius: 30px;
+            font-weight: 600;
+          "
+          type="submit"
+          value="Kirim" />
+      </form>
+    </section>
+  </body>
+</html>
